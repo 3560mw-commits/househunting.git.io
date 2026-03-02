@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StaySpace Kenya | Find Your Next Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <h1 onclick="router.navigate('home')" class="logo">Stay<span>Space</span></h1>
+            <div id="nav-links" class="nav-right"></div>
+        </div>
+    </nav>
+
+    <main id="app"></main>
+
+    <div id="modal" class="modal-overlay" style="display:none" onclick="if(event.target === this) ui.closeModal()">
+        <div class="modal-content">
+            <span class="close-modal" onclick="ui.closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
